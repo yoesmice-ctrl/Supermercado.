@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Supermercado</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Sistema de Supermercado 🛒.</h1>
+
+        <section>
+        <h2>Productos Disponibles.</h2>
+
+        <div id="productos" class="productos-grid"></div>
+        </section>
+
+        <section>
+        <h2>Carrito de Compras.</h2>
+
+        <div id="carrito-items" class="carrito-items">
+        <p>El carrito está vacío.</p>
+        </div>
+
+        <h2>Total: $<span id="total">0.00</span></h2>
+        </section>
+
+    </div>
+
+    <script src="js/main.js"></script>
+
+    <div class="filtros">
+        <button onclick="mostrarProductos()">Todos</button>
+        <button onclick="filtrarCategoria('Frutas')">Frutas</button>
+        <button onclick="filtrarCategoria('Lácteos')">Lácteos</button>
+        <button onclick="filtrarCategoria('Panadería')">Panadería</button>
+        <button onclick="filtrarCategoria('Verduras')">Verduras</button>
+        <button onclick="filtrarCategoria('Granos')">Granos</button>
+        <button onclick="filtrarCategoria('Aceites')">Aceites</button>
+    </div>
+
+</body>
+
+</html>
